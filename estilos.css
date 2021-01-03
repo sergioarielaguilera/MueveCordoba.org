@@ -6,118 +6,101 @@
  } 
  /*body*/
  body{
-   padding: 0px;
+  box-sizing: border box;
    margin: 0px;
-   height: 620px;
    padding: 0px 0px;
+   background-color: rgba(4, 4, 46, 0.788);
    }
-   .content{
-    background-image: url(./imagenes/portada\ 1.jpg);
-   }
+   .flex-container{
+     box-sizing: border box;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 610px;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     background-image: url(./imagenes/portada\ 1.jpg);
+    }
    /*navegacion*/
    .nav{
-    height:50px;
+    height: 60px;
     width: 44%;
     margin-left: 40px;
-     }
+    margin-bottom: 0px;
+  }
     .titulo{
-      background-color: rgba(110, 100, 11, 0.541);
-        padding: 3px 10px;
-        text-align: left;
+      background-color: rgba(110, 100, 11, 0.616);
+        padding: 3px 3px;
+        text-align: center;
         font-size:  22px;
         color: white;
-        float: left;
         }
       /*section*/
     div.section{
+      box-sizing: border box;
+      margin: 0px;
+      display: flex;
+      flex-wrap: wrap;
       width: 100%;
-      height: 490px;
-      margin-top: 30px;
+      height: 430px;
+      padding-left: 50px;
     }
+    .logos{
+     display: flex;
+     flex-wrap: wrap;
+     }
    .mi-logo1{
     margin-top: 10px;
-    margin-left: 70px;
-    width: 250px;
-    height: 290px;
-    float: left;
+    margin-left: 50px;
+    width: 280px;
+    height: 310px;
   }
    .videos1{ 
-    margin-top: 80px;
-    margin-left: 140px;
-    }
+    margin-top: 50px;
+    margin-left: 180px;
+  }
    .videos1:hover{
      border-bottom: solid 2px white;
      }
    .grupo{
     margin-left: 140px;
+    margin-top: 50px;
      }
    .grupo:hover{
     border-bottom: solid 2px white;
       }
    .twits{
-     margin-top:30px;
-     margin-left: 150px;
-    }
+     margin-top:50px;
+     margin-left: 140px;
+     }
      .twits:hover{
        border-bottom: solid 2px white;
     }
-    /*enlaces*/
-    div .enlaces{
-      margin-top: 5px;
-      width: 100%;
-      height: 60px;
-      display: flex;
-    }
-    div .enlaces a img{
-      width: 40px;
-      height: 40px;
-      float: left;
-    }
-    .e-guevara{
-      margin-left: 625px;
-    }
-    .e-guevara:hover{
-      border-top: solid 2px white;
-    }
-    .e-fernandez{
-      margin-left: 236px;
-    }
-    .e-fernandez:hover{
-      border-top: solid 2px white;
-    }
-     .g-esteves{
-      padding-top: 3px;
-      margin-left: 328px;
-    }
-    .g-esteves:hover{
-      border-bottom: solid 2px white;
-    }
-   /*footer*/
+    /*footer*/
      .footer{
-      margin-top: 5px;
-      margin-left: 0px;
-      margin-bottom: 10px;
-      padding-top: 3px;
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 5px;
       width: 100%px;
       height: 40px;
-    }
+      }
    .coment{
     background-color: rgba(21, 21, 167, 0.527);
     font-size: 25px;
     color: white;
     padding: 2px 7px;
-    margin-left: 70px;
+     margin-left: 60px;
     }
     .copy{
-      margin-bottom: 2px;
       margin-left: 710px;
       font-size: 20px;
-      background-color: rgba(120, 161, 236, 0.349) ;
+      background-color: rgba(104, 141, 209, 0.513) ;
       color: black;
       text-align: left;
     }
- 
-
+   @media (max-width:360px) {.flex-container{height: 620px;} .nav{ width:340px;height: 30px;margin-left: 2px;} .titulo{text-align: left;font-size: 12px;padding: 0px;margin: 0px;} div .section{margin-top: -90px;margin-left:-40px;padding-left: 12px;padding-bottom: -30px; height: 220px,} .logos{flex-wrap: wrap;padding-bottom: 0px;} .mi-logo1{ width: 120px;height: 135px;margin-left: 45px; margin-bottom: 0px} .videos1{margin-left: 10px; margin-top: 20px;margin-bottom: 0px; width: 85px; height: 105px} .grupo{width:85px; height:105px; margin-left: 55px;margin-top: -40px;} .twits{width: 85px;height: 105px;margin-left: 30px;margin-top: -40px} .footer{height: 60px} .coment{font-size: 16px;margin-bottom: 1px}  .copy{align-items: center;margin-top: 1px; font-size:12px;margin-top: 0px}
+   }
 
 
  
